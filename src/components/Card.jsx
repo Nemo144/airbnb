@@ -1,31 +1,43 @@
 import React from "react";
-import { images } from "../constants";
 
-export const Card = () => {
+export const Card = ({
+  img1,
+  img2,
+  img3,
+  star1,
+  lessons1,
+  rate1,
+  star2,
+  lessons2,
+  rate2,
+  star3,
+  lessons3,
+  rate3,
+}) => {
   return (
     <div className="flex flex-row m-4 pl-16 ">
       <div className="flex flex-col">
-        <img src={images.air1} alt="air1" />
-        <p>⭐️5.0 (6) • USA</p>
-        <p>Life lessons with Katie Zafaries</p>
-        <p>From $136 / person</p>
+        <img src={img1} alt="air1" />
+        <p>{star1}</p>
+        <p>{lessons1}</p>
+        <p>{rate1}</p>
       </div>
 
       <div className="flex flex-col">
-        <img src={images.air2} alt="air2" className=" pl-5 w-72" />
+        <img src={img2} alt="air2" className=" pl-5 w-72" />
         <div className="pl-5">
-          <p>⭐️5.0 (30) • USA</p>
-          <p>Learn wedding photography</p>
-          <p>From $125 / person</p>
+          <p>{star2}</p>
+          <p>{lessons2}</p>
+          <p>{rate2}</p>
         </div>
       </div>
 
       <div>
-        <img src={images.air3} alt="air3" className=" pl-5 w-52 my-1" />
+        <img src={img3} alt="air3" className=" pl-5 w-52 my-1" />
         <div className="pl-5">
-          <p>⭐️4.0 (6) • USA</p>
-          <p>Group mountain biking</p>
-          <p>From $50 / person</p>
+          <p>{star3}</p>
+          <p>{lessons3}</p>
+          <p>{rate3}</p>
         </div>
       </div>
     </div>

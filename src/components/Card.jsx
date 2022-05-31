@@ -16,15 +16,15 @@ export const Card = ({
 }) => {
   return (
     <div className="flex flex-row m-4 pl-16 ">
-      <div className="flex flex-col">
-        <img src={img1} alt="air1" />
+      <div className="flex flex-col flex-grow">
+        <img src={img1} alt="air1" className="w-full h-full" />
         <p>{star1}</p>
         <p>{lessons1}</p>
         <p>{rate1}</p>
       </div>
 
-      <div className="flex flex-col">
-        <img src={img2} alt="air2" className=" pl-5 w-72" />
+      <div className="flex flex-col flex-grow">
+        <img src={img2} alt="air2" className=" pl-5 w-full h-full" />
         <div className="pl-5">
           <p>{star2}</p>
           <p>{lessons2}</p>
@@ -32,8 +32,8 @@ export const Card = ({
         </div>
       </div>
 
-      <div>
-        <img src={img3} alt="air3" className=" pl-5 w-52 my-1" />
+      <div className="flex-grow">
+        <img src={img3} alt="air3" className=" pl-5 w-full" />
         <div className="pl-5">
           <p>{star3}</p>
           <p>{lessons3}</p>
